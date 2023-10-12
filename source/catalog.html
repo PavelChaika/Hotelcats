@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotelcats</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body class="body">
@@ -47,7 +46,7 @@
                         </a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="catalog.html">
+                        <a href="#">
                             Номера
                         </a>
                     </li>
@@ -109,222 +108,313 @@
         
     </header>
 
-    <main class="index">
+    <main class="catalog">
+        <h1 class="visually-hidden">Типы номеров</h1>
 
-        <section class="index__head head">
-            <p class="head__city">Санкт-Петербург</p>
-            <h1 class="head__title">Котейка</h1>
-            <p class="head__hotel">Уютная гостиница для котов и кошек</p>
-            <button class="head__btn">Забронировать</button>
-            
-        </section>
-
-        <section class="index__advantages advantages body__container">
-            <h2 class="advantages__title">
-                Почему мы?
+        <section class="catalog__rooms rooms body__container">
+            <h2 class="rooms__title">
+                Наши номера
             </h2>
-            <ul class="advantages__list">
-                <li class="advantages__item">
-                    <span class="advantages__decor advantages__decor--temperature"></span>
-                    <p class="advantages__name">
-                        Комфортная температура
-                    </p>
-                    <p class="advantages__description">
-                        Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов.
-                        В каждом номере можно дополнительно отрегулировать температуру.
-                    </p>
-                </li>
-                <li class="advantages__item">
-                    <span class="advantages__decor advantages__decor--camera"></span>
-                    <p class="advantages__name">
-                        Видеонаблюдение
-                    </p>
-                    <p class="advantages__description">
-                        Мы предоставляем доступ в нашу систему. Вы сможете следить <br class="advantages__paragraph">
-                        за своим питомцем со своего смартфона или компьютера.
-                    </p>
-                </li>
-                <li class="advantages__item">
-                    <span class="advantages__decor advantages__decor--taxi"></span>
-                    <p class="advantages__name">
-                        Услуги Зоотакси
-                    </p>
-                    <p class="advantages__description">
-                        Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
-                    </p>
-                </li>
-                <li class="advantages__item">
-                    <span class="advantages__decor advantages__decor--food"></span>
-                    <p class="advantages__name">
-                        Сбалансированное питание
-                    </p>
-                    <p class="advantages__description">
-                        Вы можете привезти свой корм
-                        или доверить рацион своего
-                        питомца нашим профессионалам.
-                    </p>
-                </li>
-                <li class="advantages__item">
-                    <span class="advantages__decor advantages__decor--walk"></span>
-                    <p class="advantages__name">
-                        Ежедневные прогулки
-                    </p>
-                    <p class="advantages__description">
-                        По вашему желанию мы выгуливаем вашего питомца два раза в день
-                        на специализированной закрытой территории.
-                    </p>
-                </li>
-                <li class="advantages__item">
-                    <span class="advantages__decor advantages__decor--medicine"></span>
-                    <p class="advantages__name">
-                        Лучшие ветеринары
-                    </p>
-                    <p class="advantages__description">
-                        В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь <br class="advantages__paragraph">
-                        в случае необходимости.
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section class="index__apartments apartments body__container">
-            <h2 class="apartments__title">
-                Номера
-            </h2>
-
-            <div class="apartments__container">                
-                <div class="apartments__slider j-apartments-slider">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="apartments__card">
-                                    <img src="img/mobile_econom.jpg" srcset="img/mobile_econom_2x.jpg 2x" alt="эконом" width="290" height="192">
-                                    <div class="apartments__wrap">
-                                        <h3 class="apartments_type">
-                                            Эконом плюс
-                                        </h3>
-                                        <ul class="apartments__list">
-                                            <li class="apartments__item">
-                                                Площадь - 0,90 м2
-                                            </li>
-                                            <li class="apartments__item">
-                                                Размеры (ШхГхВ)
-                                                90х100х180 см
-                                            </li>
-                                            <li class="apartments__item">
-                                                Цена за сутки: 200₽
-                                            </li>
-                                        </ul>
-                                        <button class="apartments__button">
-                                            Забронировать
-                                        </button>
-                                    </div>                
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="apartments__card">
-                                    <img src="img/mobile_comfort.jpg" srcset="img/mobile_comfort_2x.jpg 2x" alt="комфорт" width="290" height="192">
-                                    <div class="apartments__wrap">
-                                        <h3 class="apartments_type">
-                                            Комфорт
-                                        </h3>
-                                        <ul class="apartments__list">
-                                            <li class="apartments__item">
-                                                Площадь - 1,13 м2
-                                            </li>
-                                            <li class="apartments__item">
-                                                Размеры (ШхГхВ)
-                                                100х125х180 см
-                                            </li>
-                                            <li class="apartments__item">
-                                                Цена за сутки: 250₽
-                                            </li>
-                                        </ul>
-                                        <button class="apartments__button">
-                                            Забронировать
-                                        </button>
-                                    </div>               
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="apartments__card">
-                                    <img src="img/mobile_suite.jpg" srcset="img/mobile_suite_2x.jpg 2x" alt="люкс" width="290" height="192">
-                                    <div class="apartments__wrap">
-                                        <h3 class="apartments_type">
-                                            Сьют
-                                        </h3>
-                                        <ul class="apartments__list">
-                                            <li class="apartments__item">
-                                                Площадь - 1,56 м2
-                                            </li>
-                                            <li class="apartments__item">
-                                                Размеры (ШхГхВ)
-                                                125х125х180 см
-                                            </li>
-                                            <li class="apartments__item">
-                                                Цена за сутки: 350₽
-                                            </li>
-                                        </ul>
-                                        <button class="apartments__button">
-                                            Забронировать
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                    
-                    </div>                
-                </div>
-                <div class="apartments__btn-wrap j-apartments-controls">
-                    <div class="swiper-button-prev apartments__btn apartments__btn--back"></div>
-                    <div class="swiper-pagination apartments__pagination"></div>
-                    <div class="swiper-button-next apartments__btn apartments__btn--forward"></div>
-                </div>
+            <div class="rooms__options">
+                <button class="rooms__options-parameter rooms__options-parameter--filter" type="button">
+                    Фильтры
+                </button>
+                <button class="rooms__options-parameter rooms__options-parameter--area" type="button">
+                    По площади
+                </button>
             </div>
-            
-        </section>
 
-        <section class="index__review review body__container">
-            <h2 class="review__title">
-                Отзывы
-            </h2>
-
-            <div class="review__container">
-                <div class="review__slider j-review-slider">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="review__customer">
-                                Первый раз пришлось оставить нашего котика в гостинице, очень переживали. 
-                                Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, 
-                                как он себя чувствует. И мы и котик остались очень довольны!
-                            </div>
-                            <div class="review__customer">
-                                Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота,
-                                 когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. 
-                                 Всем рекомендую! Будем обращаться еще.
-                            </div>
-                            <div class="review__customer">
-                                Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу 
-                                за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего 
-                                телефона, это очень удобно. 
-                            </div>
+            <div class="rooms__filter pop-up__filter filter">
+                <fieldset class="rooms__coast coast">
+                    <legend class="coast__title">
+                        Цена за сутки,₽
+                    </legend>
+                    <div class="coast__container">
+                        <div class="coast__item">
+                            <label class="coast__label visually-hidden" for="coast-from">
+                                Цена от
+                            </label>
+                                <input class="contact-info__data input" id="coast-from" type="number" name="coast-from" placeholder="от 100">
                         </div>
+                        <div class="coast__item">
+                            <label class="coast__label visually-hidden" for="coast-to">
+                                Цена до
+                            </label>
+                                <input class="contact-info__data input" id="coast-to" type="number" name="coast-to" placeholder="до 600">
+                        </div>
+                    </div>                    
+                </fieldset>
+
+                <fieldset class="rooms__area checkbox area">
+                    <legend class="checkbox__legend">Площадь</legend>
+                    <div class="checkbox__container">
+                        <label class="area__item">
+                            <input class="visually-hidden" type="checkbox" id="0.63" value="0.63м2" name="0.63" checked>
+                            <span class="checkbox__decor"></span>
+                            0.63 м2
+                        </label>
+                        <label class="area__item">
+                            <input class="visually-hidden" type="checkbox" id="0.90" value="0.90м2" name="0.90" checked>
+                            <span class="checkbox__decor"></span>
+                            0.90 м2
+                        </label>
+                        <label class="area__item">
+                            <input class="visually-hidden" type="checkbox" id="1.13" value="1.13м2" name="1.13" checked>
+                            <span class="checkbox__decor"></span>
+                            1.13 м2
+                        </label>
+                        <label class="area__item">
+                            <input class="visually-hidden" type="checkbox" id="1.56" value="1.56м2" name="1.56" checked>
+                            <span class="checkbox__decor"></span>
+                            1.56 м2
+                        </label>
+                        <label class="area__item">
+                            <input class="visually-hidden" type="checkbox" id="2.56" value="2.56м2" name="2.56" checked>
+                            <span class="checkbox__decor"></span>
+                            2.56 м2
+                        </label>
+                        <label class="area__item">
+                            <input class="visually-hidden" type="checkbox" id="2.88" value="1.56м2" name="2.88" checked>
+                            <span class="checkbox__decor"></span>
+                            2.88 м2
+                        </label>
                     </div>
-                </div> 
-                <div class="review__btn-wrap j-review-controls">
-                    <div class="swiper-button-prev review__btn review__btn--back"></div>
-                    <div class="swiper-pagination review__pagination"></div>
-                    <div class="swiper-button-next review__btn review__btn--forward"></div>
-                </div>            
+                </fieldset>
+
+                <fieldset class="rooms__equipment checkbox equipment">
+                    <legend class="checkbox__legend">Оснащение номера</legend>
+                    <div class="checkbox__container">
+                        <label class="equipment__item">
+                            <input class="visually-hidden" type="checkbox" id="empty" value="empty" name="empty" checked>
+                            <span class="checkbox__decor"></span>
+                            Пустой номер
+                        </label>
+                        <label class="equipment__item">
+                            <input class="visually-hidden" type="checkbox" id="sunbed" value="sunbed" name="sunbed" checked>
+                            <span class="checkbox__decor"></span>
+                            Лежак
+                        </label>
+                        <label class="equipment__item">
+                            <input class="visually-hidden" type="checkbox" id="scratching" value="scratching" name="scratching " checked>
+                            <span class="checkbox__decor"></span>
+                            Когтеточка
+                        </label>
+                        <label class="equipment__item">
+                            <input class="visually-hidden" type="checkbox" id="complex" value="complex" name="complex" checked>
+                            <span class="checkbox__decor"></span>
+                            Игровой-комплекс
+                        </label>
+                        <label class="equipment__item">
+                            <input class="visually-hidden" type="checkbox" id="house" value="house" name="house" checked>
+                            <span class="checkbox__decor"></span>
+                            Домик
+                        </label>
+                    </div>
+                </fieldset>
+                <button class="rooms__btn btn__add" type="button">
+                    Подобрать
+                </button>
+                <button class="rooms__btn btn__reset" type="button">
+                    Сбросить фильтр
+                </button>
+            </div>
+ 
+            <div class="rooms__container">
+                <div class="rooms__card">
+                    <img src="img/rooms-econom.jpg" srcset="img/rooms-econom_2x.jpg 2x" alt="эконом" width="290" height="185">
+                    <div class="rooms__wrap">
+                        <h3 class="rooms__type">
+                            Эконом
+                        </h3>
+                        <ul class="rooms__list">
+                            <li class="rooms__item">
+                                Размеры (ШхГхВ) - 90х70х180 см
+                            </li>
+                            <li class="rooms__item">
+                                Площадь - 0,63 м2
+                            </li>
+                            <li class="rooms__item rooms__item-equipment">
+                                Оснащение номера
+                                <span class="rooms__decor-empty"></span>
+                            </li>
+                            <li class="rooms__item rooms__item-cost">
+                                Цена за сутки: 
+                                <span class="rooms__price">100₽</span>
+                            </li>
+                        </ul>
+                        <button class="rooms__button" type="button">
+                            Забронировать
+                        </button>
+                    </div>
+                </div>
+                <div class="rooms__card">
+                    <img src="img/rooms-economplus.jpg" srcset="img/rooms-economplus_2x.jpg 2x" alt="эконом-плюс" width="290" height="185">
+                    <div class="rooms__wrap">
+                        <h3 class="rooms__type">
+                            Эконом плюс
+                        </h3>
+                        <ul class="rooms__list">
+                            <li class="rooms__item">
+                                Размеры (ШхГхВ) - 90х100х180 см
+                            </li>
+                            <li class="rooms__item">
+                                Площадь - 0,90 м2
+                            </li>
+                            <li class="rooms__item rooms__item-equipment">
+                                Оснащение номера
+                                <span class="rooms__decor-tray"></span>
+                                <span class="rooms__decor-scratching"></span>
+                            </li>
+                            <li class="rooms__item rooms__item-cost">
+                                Цена за сутки: 
+                                <span class="rooms__price">200₽</span>
+                            </li>
+                        </ul>
+                        <button class="rooms__button" type="button">
+                            Забронировать
+                        </button>
+                    </div>
+                </div>
+                <div class="rooms__card">
+                    <img src="img/rooms-comfort.jpg" srcset="img/rooms-comfort_2x.jpg 2x" alt="комфорт" width="290" height="185">
+                    <div class="rooms__wrap">
+                        <h3 class="rooms__type">
+                            Комфорт
+                        </h3>
+                        <ul class="rooms__list">
+                            <li class="rooms__item">
+                                Размеры (ШхГхВ) - 100х125х180 см
+                            </li>
+                            <li class="rooms__item">
+                                Площадь - 1,13 м2
+                            </li>
+                            <li class="rooms__item rooms__item-equipment">
+                                Оснащение номера
+                                <span class="rooms__decor-tray"></span>
+                                <span class="rooms__decor-scratching"></span>
+                                <span class="rooms__decor-ball"></span>
+                            </li>
+                            <li class="rooms__item rooms__item-cost">
+                                Цена за сутки: 
+                                <span class="rooms__price">250₽</span>
+                            </li>
+                        </ul>
+                        <button class="rooms__button" type="button">
+                            Забронировать
+                        </button>
+                    </div>
+                </div>
+                <div class="rooms__card">
+                    <img src="img/rooms-suite.jpg" srcset="img/rooms-suite_2x.jpg 2x" alt="Сьют" width="290" height="185">
+                    <div class="rooms__wrap">
+                        <h3 class="rooms__type">
+                            Сьют
+                        </h3>
+                        <ul class="rooms__list">
+                            <li class="rooms__item">
+                                Размеры (ШхГхВ) - 125х125х180 см
+                            </li>
+                            <li class="rooms__item">
+                                Площадь - 1,56 м2
+                            </li>
+                            <li class="rooms__item rooms__item-equipment">
+                                Оснащение номера
+                                <span class="rooms__decor-tray"></span>
+                                <span class="rooms__decor-scratching"></span>
+                                <span class="rooms__decor-ball"></span>
+                            </li>
+                            <li class="rooms__item rooms__item-cost">
+                                Цена за сутки: 
+                                <span class="rooms__price">350₽</span>
+                            </li>
+                        </ul>
+                        <button class="rooms__button" type="button">
+                            Забронировать
+                        </button>
+                    </div>
+                </div>
+                <div class="rooms__card">
+                    <img src="img/rooms-lux.jpg" srcset="img/rooms-lux_2x.jpg 2x" alt="люкс" width="290" height="185">
+                    <div class="rooms__wrap">
+                        <h3 class="rooms__type">
+                            Люкс
+                        </h3>
+                        <ul class="rooms__list">
+                            <li class="rooms__item">
+                                Размеры (ШхГхВ) - 160х160х180 см
+                            </li>
+                            <li class="rooms__item">
+                                Площадь - 2,56 м2
+                            </li>
+                            <li class="rooms__item rooms__item-equipment">
+                                Оснащение номера
+                                <span class="rooms__decor-tray"></span>
+                                <span class="rooms__decor-scratching"></span>
+                                <span class="rooms__decor-ball"></span>
+                                <span class="rooms__decor-house"></span>
+                            </li>
+                            <li class="rooms__item rooms__item-cost">
+                                Цена за сутки: 
+                                <span class="rooms__price">500₽</span>
+                            </li>
+                        </ul>
+                        <button class="rooms__button" type="button">
+                            Забронировать
+                        </button>
+                    </div>
+                </div>
+                <div class="rooms__card">
+                    <img src="img/rooms-superlux.jpg" srcset="img/rooms-superlux.jpg_2x.jpg 2x" alt="люкс" width="290" height="185">
+                    <div class="rooms__wrap">
+                        <h3 class="rooms__type">
+                            Супер-Люкс
+                        </h3>
+                        <ul class="rooms__list">
+                            <li class="rooms__item">
+                                Размеры (ШхГхВ) - 180х160х180 см
+                            </li>
+                            <li class="rooms__item">
+                                Площадь - 2,88 м2
+                            </li>
+                            <li class="rooms__item rooms__item-equipment">
+                                Оснащение номера
+                                <span class="rooms__decor-tray"></span>
+                                <span class="rooms__decor-scratching"></span>
+                                <span class="rooms__decor-ball"></span>
+                                <span class="rooms__decor-house"></span>
+                            </li>
+                            <li class="rooms__item rooms__item-cost">
+                                Цена за сутки: 
+                                <span class="rooms__price">600₽</span>
+                            </li>
+                        </ul>
+                        <button class="rooms__button" type="button">
+                            Забронировать
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section class="catalog__promo promo body__container">
+            <div class="promo__wrap">
+                <h2 class="promo__title">
+                    Каждый 7-й день
+                    <span class="promo__font">бесплатно!</span>
+                </h2>
+                <p class="promo__text">
+                    Акция действует при размещении
+                    в номерах “Люкс” и “Супер-Люкс”
+                </p>
+                <button class="promo__btn" type="button">
+                    Забронировать
+                </button>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer__catalog">
         <div class="footer__wrap">
             <h2 class="footer__title">
                 Как нас найти
@@ -514,116 +604,6 @@
             headerColor.classList.add('header__color');
         }
         );
-
-    </script>
-
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
-
-        // Apartments slider
-        const apartmentsSwiperContainer = document.querySelector(".j-apartments-slider .swiper");
-        // const apartmentsSwiperThumbsContainer = document.querySelector(".j-apartments-slider-thumbs .swiper");
-
-        const apartmentsSwiper = new Swiper(apartmentsSwiperContainer, {
-            speed: 200,
-            spaceBetween: 15,
-            // breakpoints: {
-            //     768: {
-            //         direction: 'vertical',
-            //         spaceBetween: 20
-            //     }
-            // }
-        });
-
-        const apartmentsSwiperThumbs = new Swiper(apartmentsSwiperContainer, {
-            speed: 200,
-            spaceBetween: 20,
-            navigation: {// Buttons
-                nextEl: '.j-apartments-controls .swiper-button-next',
-                prevEl: '.j-apartments-controls .swiper-button-prev',
-            },
-            thumbs: {// Second slides
-                swiper: apartmentsSwiper
-            },
-            // breakpoints: {
-            //     768: {
-            //         direction: 'vertical',
-            //         slidesPerView: 3,
-            //         spaceBetween: 20,
-            //         pagination: {
-            //             el: '.j-apartments-controls .swiper-pagination',
-            //             type: 'fraction',
-            //         },
-            //     }
-            // },
-        });
-
-        // Review slider
-        // const reviewSwiperContainer = document.querySelector(".j-review-slider .swiper");
-        // const reviewSwiperThumbsContainer = document.querySelector(".j-review-slider-thumbs .swiper");
-
-        // const reviewSwiper = new Swiper(reviewSwiperContainer, {
-        //     speed: 200,
-        //     spaceBetween: 15,
-        //     breakpoints: {
-        //         768: {
-        //             direction: 'vertical',
-        //             spaceBetween: 20
-        //         }
-        //     }
-        // });
-
-        // const reviewSwiperThumbs = new Swiper(reviewSwiperContainer, {
-        //     speed: 200,
-        //     spaceBetween: 20,
-        //     navigation: {// Buttons
-        //         nextEl: '.j-review-controls .swiper-button-next',
-        //         prevEl: '.j-review-controls .swiper-button-prev',
-        //     },
-        //     thumbs: {// Second slides
-        //         swiper: reviewSwiper
-        //     },
-        //     breakpoints: {
-        //         768: {
-        //             direction: 'vertical',
-        //             slidesPerView: 3,
-        //             spaceBetween: 20,
-        //             pagination: {
-        //                 el: '.j-review-controls .swiper-pagination',
-        //                 type: 'fraction',
-        //             },
-        //         }
-        //     },
-        // });
-
-        // Review slider
-        const reviewSwiperContainer = document.querySelector(".j-review-slider .swiper");
-
-        const reviewSwiper = new Swiper(reviewSwiperContainer, {
-            speed: 200,
-            spaceBetween: 16,
-            navigation: {// Buttons
-                nextEl: '.j-review-slider .swiper-button-next',
-                prevEl: '.j-review-slider .swiper-button-prev',
-            },
-            pagination: {
-                el: '.j-review-controls .swiper-pagination',
-                type: 'fraction',
-            },
-
-            breakpoints: {
-                768: {
-                    direction: 'vertical',
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    direction: 'horizontal',
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                }
-            },
-        });
 
     </script>
 

@@ -1,10 +1,52 @@
-
+.main-nav {
+    min-height: 519px;
+    background-color: @basic-yellow;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 38px;
+}
 
 .main-nav__toggle {
     padding: 0;
-    background-color: @basic-background;
+    background-color: inherit;
 }
 
 .main-nav__list {
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 15px;
+}
+
+.main-nav__item {
+    margin-top: 25px;
+}
+
+.main-nav__item--mobile {
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}
+
+.main-nav__item--tablet {
     display: none;
+
+    @media (min-width: @tablet-width) {
+        display: block;
+    }
+}
+
+.main-nav__item--tel {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.main-nav__item--social {
+    line-height: 0px;
 }

@@ -1,5 +1,20 @@
 .apartments {
     padding-top: 66px !important;
+    position: relative;
+}
+
+.apartments::before {
+    content: "";
+    width: 150px;
+    height: 46px;
+    // background-color: red;
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    background-image: url(../img/fish_apartments.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
 }
 
 .apartments img {
@@ -64,7 +79,7 @@
 
 }
 
-.apartments__btn {
+.apartments__button {
     display: block;
     font-size: 16px;
     line-height: 19px;
@@ -74,4 +89,101 @@
     padding: 15px 78px 16px 49px;
     margin: 0 auto;    
     border-radius: 25px;
+    position: relative;
+}
+
+.apartments__button::before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/paw_btn.svg);
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+}
+
+.apartments__btn-wrap {
+    position: relative;
+}
+
+.apartments__btn {
+    width: 16px !important;
+    height: 31px !important;
+    border: 1px solid red;
+    position: absolute;
+    top: 1px !important;
+    margin: 20px 30px !important;
+    background-color: red;
+
+    &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #fff;
+        border-top: none;
+        border-right: none;
+
+        // @media (min-width: @tablet-width) {
+        //     width: 8px;
+        //     height: 8px;
+        // }
+
+        // @media (min-width: @desktop-width) {
+        //     width: 10px;
+        //     height: 10px;
+        // }
+    }
+
+    &::after {
+        display: none;
+    }
+
+    // @media (min-width: @tablet-width) {
+    //     width: 28px !important;
+    //     height: 20px !important;
+    //     position: relative !important;
+    //     top: 0 !important;
+    // }
+
+    // @media (min-width: @desktop-width) {
+    //     width: 45px !important;
+    //     height: 30px !important;
+    // }
+
+    &.swiper-button-disabled {
+        opacity: 1 !important;
+        background-color: transparent;
+
+        &::before {
+            border-color: red;
+        }
+    }
+}
+
+.apartments__btn--back {
+    left: -20px !important;
+
+    &::before {
+        transform: translate(-50%, -50%) translateX(1px) rotate(45deg);
+    }
+
+    @media (min-width: @tablet-width) {
+        left: 0 !important;
+    }
+}
+
+.apartments__btn--forward {
+    right: -20px !important;
+
+    &::before {
+        transform: translate(-50%, -50%) translateX(-1px) rotate(225deg);
+    }
+
+    @media (min-width: @tablet-width) {
+        right: 0 !important;
+    }
 }

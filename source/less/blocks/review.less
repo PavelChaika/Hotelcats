@@ -1,5 +1,20 @@
 .review {
     padding-top: 112px;
+    position: relative;
+}
+
+.review::before {
+    content: "";
+    width: 82px;
+    height: 106px;
+    // background-color: red;
+    position: absolute;
+    top: 108px;
+    right: 0px;
+    background-image: url(../img/review_back.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    // opacity: 0.2;
 }
 
 .review__title {
@@ -35,4 +50,91 @@
     background-image: url(../img/quote.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+
+.review__btn-wrap {
+    position: relative;
+}
+
+.review__btn {
+    width: 16px !important;
+    height: 31px !important;
+    border: 1px solid red;
+    position: absolute;
+    top: 1px !important;
+    margin: 20px 30px !important;
+    background-color: red;
+
+    &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #fff;
+        border-top: none;
+        border-right: none;
+
+        // @media (min-width: @tablet-width) {
+        //     width: 8px;
+        //     height: 8px;
+        // }
+
+        // @media (min-width: @desktop-width) {
+        //     width: 10px;
+        //     height: 10px;
+        // }
+    }
+
+    &::after {
+        display: none;
+    }
+
+    // @media (min-width: @tablet-width) {
+    //     width: 28px !important;
+    //     height: 20px !important;
+    //     position: relative !important;
+    //     top: 0 !important;
+    // }
+
+    // @media (min-width: @desktop-width) {
+    //     width: 45px !important;
+    //     height: 30px !important;
+    // }
+
+    &.swiper-button-disabled {
+        opacity: 1 !important;
+        background-color: transparent;
+
+        &::before {
+            border-color: red;
+        }
+    }
+}
+
+.review__btn--back {
+    left: -20px !important;
+
+    &::before {
+        transform: translate(-50%, -50%) translateX(1px) rotate(45deg);
+    }
+
+    @media (min-width: @tablet-width) {
+        left: 0 !important;
+    }
+}
+
+.review__btn--forward {
+    right: -20px !important;
+
+    &::before {
+        transform: translate(-50%, -50%) translateX(-1px) rotate(225deg);
+    }
+
+    @media (min-width: @tablet-width) {
+        right: 0 !important;
+    }
 }
