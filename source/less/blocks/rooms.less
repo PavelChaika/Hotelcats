@@ -123,6 +123,52 @@
     margin-left: 10px;
 }
 
+.rooms__item-equipment {
+    display: flex;
+}
+
+.rooms__decor {
+    position: relative;
+    margin-left: 10px;
+    width: 18px;
+}
+
+.rooms__decor-empty::after,
+.rooms__decor-tray::after,
+.rooms__decor-scratching::after,
+.rooms__decor-ball::after,
+.rooms__decor-house::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rooms__decor-empty::after {
+    background-image: url(../img/empty.svg);
+}
+
+.rooms__decor-tray::after {
+    height: 14px;
+    background-image: url(../img/tray.svg);
+}
+
+.rooms__decor-scratching::after {
+    width: 16px;
+    background-image: url(../img/scratching.svg);
+}
+
+.rooms__decor-ball::after {
+    background-image: url(../img/ball.svg);
+}
+
+.rooms__decor-house::after {
+    background-image: url(../img/house.svg);
+}
+
 .rooms__button {
     font-size: 14px;
     line-height: normal;

@@ -116,7 +116,7 @@
                 Наши номера
             </h2>
             <div class="rooms__options">
-                <button class="rooms__options-parameter rooms__options-parameter--filter" type="button">
+                <button class="rooms__options-parameter rooms__options-parameter--filter filter__js" type="button">
                     Фильтры
                 </button>
                 <button class="rooms__options-parameter rooms__options-parameter--area" type="button">
@@ -125,22 +125,26 @@
             </div>
 
             <div class="rooms__filter pop-up__filter filter">
+                <button class="filter__toggle" type="button">
+                    <span class="filter__close"></span>
+                </button>
                 <fieldset class="rooms__coast coast">
                     <legend class="coast__title">
-                        Цена за сутки,₽
+                        <p>Цена за сутки,</p>
+                        <p class="coast__ruble">₽</p>
                     </legend>
                     <div class="coast__container">
                         <div class="coast__item">
                             <label class="coast__label visually-hidden" for="coast-from">
                                 Цена от
                             </label>
-                                <input class="contact-info__data input" id="coast-from" type="number" name="coast-from" placeholder="от 100">
+                                <input class="coast__price" id="coast-from" type="number" name="coast-from" placeholder="от 100">
                         </div>
                         <div class="coast__item">
                             <label class="coast__label visually-hidden" for="coast-to">
                                 Цена до
                             </label>
-                                <input class="contact-info__data input" id="coast-to" type="number" name="coast-to" placeholder="до 600">
+                                <input class="coast__price" id="coast-to" type="number" name="coast-to" placeholder="до 600">
                         </div>
                     </div>                    
                 </fieldset>
@@ -211,10 +215,10 @@
                         </label>
                     </div>
                 </fieldset>
-                <button class="rooms__btn btn__add" type="button">
+                <button class="checkbox__btn checkbox__btn--add" type="button">
                     Подобрать
                 </button>
-                <button class="rooms__btn btn__reset" type="button">
+                <button class="checkbox__btn checkbox__btn--reset" type="button">
                     Сбросить фильтр
                 </button>
             </div>
@@ -234,8 +238,8 @@
                                 Площадь - 0,63 м2
                             </li>
                             <li class="rooms__item rooms__item-equipment">
-                                Оснащение номера
-                                <span class="rooms__decor-empty"></span>
+                                <p>Оснащение номера</p>                                
+                                <span class="rooms__decor rooms__decor-empty"></span>
                             </li>
                             <li class="rooms__item rooms__item-cost">
                                 Цена за сутки: 
@@ -261,9 +265,9 @@
                                 Площадь - 0,90 м2
                             </li>
                             <li class="rooms__item rooms__item-equipment">
-                                Оснащение номера
-                                <span class="rooms__decor-tray"></span>
-                                <span class="rooms__decor-scratching"></span>
+                                <p>Оснащение номера</p> 
+                                <span class="rooms__decor rooms__decor-tray"></span>
+                                <span class="rooms__decor rooms__decor-scratching"></span>
                             </li>
                             <li class="rooms__item rooms__item-cost">
                                 Цена за сутки: 
@@ -289,10 +293,10 @@
                                 Площадь - 1,13 м2
                             </li>
                             <li class="rooms__item rooms__item-equipment">
-                                Оснащение номера
-                                <span class="rooms__decor-tray"></span>
-                                <span class="rooms__decor-scratching"></span>
-                                <span class="rooms__decor-ball"></span>
+                                <p>Оснащение номера</p> 
+                                <span class="rooms__decor rooms__decor-tray"></span>
+                                <span class="rooms__decor rooms__decor-scratching"></span>
+                                <span class="rooms__decor rooms__decor-ball"></span>
                             </li>
                             <li class="rooms__item rooms__item-cost">
                                 Цена за сутки: 
@@ -318,10 +322,10 @@
                                 Площадь - 1,56 м2
                             </li>
                             <li class="rooms__item rooms__item-equipment">
-                                Оснащение номера
-                                <span class="rooms__decor-tray"></span>
-                                <span class="rooms__decor-scratching"></span>
-                                <span class="rooms__decor-ball"></span>
+                                <p>Оснащение номера</p> 
+                                <span class="rooms__decor rooms__decor-tray"></span>
+                                <span class="rooms__decor rooms__decor-scratching"></span>
+                                <span class="rooms__decor rooms__decor-ball"></span>
                             </li>
                             <li class="rooms__item rooms__item-cost">
                                 Цена за сутки: 
@@ -347,11 +351,11 @@
                                 Площадь - 2,56 м2
                             </li>
                             <li class="rooms__item rooms__item-equipment">
-                                Оснащение номера
-                                <span class="rooms__decor-tray"></span>
-                                <span class="rooms__decor-scratching"></span>
-                                <span class="rooms__decor-ball"></span>
-                                <span class="rooms__decor-house"></span>
+                                <p>Оснащение номера</p> 
+                                <span class="rooms__decor rooms__decor-tray"></span>
+                                <span class="rooms__decor rooms__decor-scratching"></span>
+                                <span class="rooms__decor rooms__decor-ball"></span>
+                                <span class="rooms__decor rooms__decor-house"></span>
                             </li>
                             <li class="rooms__item rooms__item-cost">
                                 Цена за сутки: 
@@ -377,11 +381,11 @@
                                 Площадь - 2,88 м2
                             </li>
                             <li class="rooms__item rooms__item-equipment">
-                                Оснащение номера
-                                <span class="rooms__decor-tray"></span>
-                                <span class="rooms__decor-scratching"></span>
-                                <span class="rooms__decor-ball"></span>
-                                <span class="rooms__decor-house"></span>
+                                <p>Оснащение номера</p> 
+                                <span class="rooms__decor rooms__decor-tray"></span>
+                                <span class="rooms__decor rooms__decor-scratching"></span>
+                                <span class="rooms__decor rooms__decor-ball"></span>
+                                <span class="rooms__decor rooms__decor-house"></span>
                             </li>
                             <li class="rooms__item rooms__item-cost">
                                 Цена за сутки: 
@@ -585,6 +589,10 @@
         var openToggle = document.querySelector('.pop-up__open');
         var headerColor = document.querySelector('.header');
 
+        var filtPop = document.querySelector('.filter');
+        var openFilter = document.querySelector('.filter__js');
+        var closeFilter = document.querySelector('.filter__toggle');
+
         // navPop.classList.remove('pop-up--nojs');  
 
         closeToggle.addEventListener('click', function () {
@@ -602,6 +610,24 @@
             closeToggle.classList.add('pop-up__opened');
             openToggle.classList.add('pop-up__closed');
             headerColor.classList.add('header__color');
+        }
+        );
+
+        openFilter.addEventListener('click', function () {
+            filtPop.classList.remove('pop-up__filter');
+            // navPop.classList.remove('pop-up__opened');
+            // openToggle.classList.remove('pop-up__closed');
+            // closeToggle.classList.remove('pop-up__opened');
+            // headerColor.classList.remove('header__color');
+        }
+        );
+
+        closeFilter.addEventListener('click', function () {
+            filtPop.classList.add('pop-up__filter');
+            // navPop.classList.add('pop-up__opened');
+            // closeToggle.classList.add('pop-up__opened');
+            // openToggle.classList.add('pop-up__closed');
+            // headerColor.classList.add('header__color');
         }
         );
 

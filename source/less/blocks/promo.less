@@ -29,3 +29,32 @@
 .promo__text{
     margin-bottom: 30px;
 }
+
+.promo__btn {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #1A212F;
+    width: 70%;
+    text-align: left;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    border-radius: 25px;
+    background-color: #FFFEFD;
+    position: relative;
+}
+
+.promo__btn::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/paw.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}

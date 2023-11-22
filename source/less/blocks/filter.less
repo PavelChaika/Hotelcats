@@ -1,3 +1,43 @@
 .filter {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 25px 0px rgba(153, 153, 153, 0.25);
+    padding-bottom: 50px;
+    position: absolute;
+    top: 102px;
+    width: 91%;
+    background-color: #FFFEFD;
+    z-index: 1;
+}
+
+.filter__toggle {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    background-color: #FFFEFD;
+}
+
+.filter__close::after,
+.filter__close::before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+.filter__close::after {
+    transform: rotate(45deg);
+}
+
+.filter__close::before {
+    transform: rotate(-45deg);
 }
