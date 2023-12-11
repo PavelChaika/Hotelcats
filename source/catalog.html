@@ -125,102 +125,104 @@
             </div>
 
             <div class="rooms__filter pop-up__filter filter">
-                <button class="filter__toggle" type="button">
-                    <span class="filter__close"></span>
-                </button>
-                <fieldset class="rooms__coast coast">
-                    <legend class="coast__title">
-                        <p>Цена за сутки,</p>
-                        <p class="coast__ruble">₽</p>
-                    </legend>
-                    <div class="coast__container">
-                        <div class="coast__item">
-                            <label class="coast__label visually-hidden" for="coast-from">
-                                Цена от
+                <div class="filter__container">
+                    <button class="filter__toggle" type="button">
+                        <span class="filter__close"></span>
+                    </button>
+                    <fieldset class="rooms__coast coast">
+                        <legend class="coast__title">
+                            <p>Цена за сутки,</p>
+                            <p class="coast__ruble">₽</p>
+                        </legend>
+                        <div class="coast__container">
+                            <div class="coast__item">
+                                <label class="coast__label visually-hidden" for="coast-from">
+                                    Цена от
+                                </label>
+                                    <input class="coast__price" id="coast-from" type="number" name="coast-from" placeholder="от 100">
+                            </div>
+                            <div class="coast__item">
+                                <label class="coast__label visually-hidden" for="coast-to">
+                                    Цена до
+                                </label>
+                                    <input class="coast__price" id="coast-to" type="number" name="coast-to" placeholder="до 600">
+                            </div>
+                        </div>                    
+                    </fieldset>
+    
+                    <fieldset class="rooms__area checkbox area">
+                        <legend class="checkbox__legend">Площадь</legend>
+                        <div class="checkbox__container">
+                            <label class="area__item">
+                                <input class="visually-hidden" type="checkbox" id="0.63" value="0.63м2" name="0.63" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">0.63 м2</span>                            
                             </label>
-                                <input class="coast__price" id="coast-from" type="number" name="coast-from" placeholder="от 100">
-                        </div>
-                        <div class="coast__item">
-                            <label class="coast__label visually-hidden" for="coast-to">
-                                Цена до
+                            <label class="area__item">
+                                <input class="visually-hidden" type="checkbox" id="0.90" value="0.90м2" name="0.90" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">0.90 м2</span>                            
                             </label>
-                                <input class="coast__price" id="coast-to" type="number" name="coast-to" placeholder="до 600">
+                            <label class="area__item">
+                                <input class="visually-hidden" type="checkbox" id="1.13" value="1.13м2" name="1.13" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">1.13 м2</span>                            
+                            </label>
+                            <label class="area__item">
+                                <input class="visually-hidden" type="checkbox" id="1.56" value="1.56м2" name="1.56" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">1.56 м2</span>                            
+                            </label>
+                            <label class="area__item">
+                                <input class="visually-hidden" type="checkbox" id="2.56" value="2.56м2" name="2.56" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">2.56 м2</span>                            
+                            </label>
+                            <label class="area__item">
+                                <input class="visually-hidden" type="checkbox" id="2.88" value="1.56м2" name="2.88" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">2.88 м2</span>                            
+                            </label>
                         </div>
-                    </div>                    
-                </fieldset>
-
-                <fieldset class="rooms__area checkbox area">
-                    <legend class="checkbox__legend">Площадь</legend>
-                    <div class="checkbox__container">
-                        <label class="area__item">
-                            <input class="visually-hidden" type="checkbox" id="0.63" value="0.63м2" name="0.63" checked>
-                            <span class="checkbox__decor"></span>
-                            0.63 м2
-                        </label>
-                        <label class="area__item">
-                            <input class="visually-hidden" type="checkbox" id="0.90" value="0.90м2" name="0.90" checked>
-                            <span class="checkbox__decor"></span>
-                            0.90 м2
-                        </label>
-                        <label class="area__item">
-                            <input class="visually-hidden" type="checkbox" id="1.13" value="1.13м2" name="1.13" checked>
-                            <span class="checkbox__decor"></span>
-                            1.13 м2
-                        </label>
-                        <label class="area__item">
-                            <input class="visually-hidden" type="checkbox" id="1.56" value="1.56м2" name="1.56" checked>
-                            <span class="checkbox__decor"></span>
-                            1.56 м2
-                        </label>
-                        <label class="area__item">
-                            <input class="visually-hidden" type="checkbox" id="2.56" value="2.56м2" name="2.56" checked>
-                            <span class="checkbox__decor"></span>
-                            2.56 м2
-                        </label>
-                        <label class="area__item">
-                            <input class="visually-hidden" type="checkbox" id="2.88" value="1.56м2" name="2.88" checked>
-                            <span class="checkbox__decor"></span>
-                            2.88 м2
-                        </label>
-                    </div>
-                </fieldset>
-
-                <fieldset class="rooms__equipment checkbox equipment">
-                    <legend class="checkbox__legend">Оснащение номера</legend>
-                    <div class="checkbox__container">
-                        <label class="equipment__item">
-                            <input class="visually-hidden" type="checkbox" id="empty" value="empty" name="empty" checked>
-                            <span class="checkbox__decor"></span>
-                            Пустой номер
-                        </label>
-                        <label class="equipment__item">
-                            <input class="visually-hidden" type="checkbox" id="sunbed" value="sunbed" name="sunbed" checked>
-                            <span class="checkbox__decor"></span>
-                            Лежак
-                        </label>
-                        <label class="equipment__item">
-                            <input class="visually-hidden" type="checkbox" id="scratching" value="scratching" name="scratching " checked>
-                            <span class="checkbox__decor"></span>
-                            Когтеточка
-                        </label>
-                        <label class="equipment__item">
-                            <input class="visually-hidden" type="checkbox" id="complex" value="complex" name="complex" checked>
-                            <span class="checkbox__decor"></span>
-                            Игровой-комплекс
-                        </label>
-                        <label class="equipment__item">
-                            <input class="visually-hidden" type="checkbox" id="house" value="house" name="house" checked>
-                            <span class="checkbox__decor"></span>
-                            Домик
-                        </label>
-                    </div>
-                </fieldset>
-                <button class="checkbox__btn checkbox__btn--add" type="button">
-                    Подобрать
-                </button>
-                <button class="checkbox__btn checkbox__btn--reset" type="button">
-                    Сбросить фильтр
-                </button>
+                    </fieldset>
+    
+                    <fieldset class="rooms__equipment checkbox equipment">
+                        <legend class="checkbox__legend">Оснащение номера</legend>
+                        <div class="checkbox__container">
+                            <label class="equipment__item">
+                                <input class="visually-hidden" type="checkbox" id="empty" value="empty" name="empty" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">Пустой номер</span>                            
+                            </label>
+                            <label class="equipment__item">
+                                <input class="visually-hidden" type="checkbox" id="sunbed" value="sunbed" name="sunbed" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">Лежак</span>                            
+                            </label>
+                            <label class="equipment__item">
+                                <input class="visually-hidden" type="checkbox" id="scratching" value="scratching" name="scratching " checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">Когтеточка</span>                            
+                            </label>
+                            <label class="equipment__item">
+                                <input class="visually-hidden" type="checkbox" id="complex" value="complex" name="complex" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">Игровой-комплекс</span>                            
+                            </label>
+                            <label class="equipment__item">
+                                <input class="visually-hidden" type="checkbox" id="house" value="house" name="house" checked>
+                                <span class="checkbox__decor"></span>
+                                <span class="checkbox__item">Домик</span>                            
+                            </label>
+                        </div>
+                    </fieldset>
+                    <button class="checkbox__btn checkbox__btn--add" type="button">
+                        Подобрать
+                    </button>
+                    <button class="checkbox__btn checkbox__btn--reset" type="button">
+                        Сбросить фильтр
+                    </button>
+                </div>
             </div>
  
             <div class="rooms__container">
@@ -615,19 +617,11 @@
 
         openFilter.addEventListener('click', function () {
             filtPop.classList.remove('pop-up__filter');
-            // navPop.classList.remove('pop-up__opened');
-            // openToggle.classList.remove('pop-up__closed');
-            // closeToggle.classList.remove('pop-up__opened');
-            // headerColor.classList.remove('header__color');
         }
         );
 
         closeFilter.addEventListener('click', function () {
             filtPop.classList.add('pop-up__filter');
-            // navPop.classList.add('pop-up__opened');
-            // closeToggle.classList.add('pop-up__opened');
-            // openToggle.classList.add('pop-up__closed');
-            // headerColor.classList.add('header__color');
         }
         );
 
