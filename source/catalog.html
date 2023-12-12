@@ -119,9 +119,25 @@
                 <button class="rooms__options-parameter rooms__options-parameter--filter filter__js" type="button">
                     Фильтры
                 </button>
-                <button class="rooms__options-parameter rooms__options-parameter--area" type="button">
-                    По площади
-                </button>
+                <div class="rooms__area area">
+                    <button class="rooms__options-parameter rooms__options-parameter--area area__js" type="button">
+                        По площади
+                    </button>            
+                    <ul class="area__list pop-up__area pop-up__area--js">
+                        <li class="area__option">
+                            <button class="area__btn area__btn--up area__choose" type="button">По площади</button>
+                        </li>
+                        <li class="area__option">
+                            <button class="area__btn area__btn--down" type="button">По площади</button>
+                        </li>
+                        <li class="area__option">
+                            <button class="area__btn area__btn--up" type="button">По цене</button>
+                        </li>
+                        <li class="area__option">
+                            <button class="area__btn area__btn--down" type="button">По цене</button>
+                        </li>
+                    </ul>                
+                </div>
             </div>
 
             <div class="rooms__filter pop-up__filter filter">
@@ -595,6 +611,10 @@
         var openFilter = document.querySelector('.filter__js');
         var closeFilter = document.querySelector('.filter__toggle');
 
+        var areaPop = document.querySelector('.pop-up__area--js');
+        var openArea = document.querySelector('.area__js');
+        var closeArea = document.querySelector('.area__btn');
+
         // navPop.classList.remove('pop-up--nojs');  
 
         closeToggle.addEventListener('click', function () {
@@ -622,6 +642,16 @@
 
         closeFilter.addEventListener('click', function () {
             filtPop.classList.add('pop-up__filter');
+        }
+        );
+
+        openArea.addEventListener('click', function () {
+            areaPop.classList.remove('pop-up__area--js');
+        }
+        );
+
+        closeArea.addEventListener('click', function () {
+            areaPop.classList.add('pop-up__area--js');
         }
         );
 
