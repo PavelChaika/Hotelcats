@@ -1,0 +1,104 @@
+.choice {
+    margin-top: 40px;
+}
+
+.choice__pict {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.choice__main-pict {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.choice__title {
+    font-family: "Rubik";
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.choice__list {
+    font-size: 15px;
+    line-height: normal;
+}
+
+.choice__item {
+    margin-bottom: 20px;
+}
+
+.choice__item-equipment p {
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+
+.choice__decor {
+    position: relative;
+    // margin-left: 10px;
+    width: 18px;
+    padding-left: 28px;
+}
+
+.choice__decor-tray::after,
+.choice__decor-house::after,
+.choice__decor-ball::after,
+.choice__decor-scratching::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.choice__decor-tray::after {
+    height: 14px;
+    background-image: url(../img/tray.svg);
+}
+
+.choice__decor-house::after {
+    background-image: url(../img/house.svg);
+}
+
+.choice__decor-ball::after {
+    background-image: url(../img/ball.svg);
+}
+
+.choice__decor-scratching::after {
+    width: 16px;
+    background-image: url(../img/scratching.svg);
+}
+
+.choice__button {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border-radius: 25px;
+    background-color: @basic-orange;
+
+    position: relative;
+}
+
+.choice__button::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/paw_btn.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}

@@ -152,6 +152,33 @@
     background-image: url(../img/empty.svg);
 }
 
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::before {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 600;
+    width: max-content;
+    padding: 10px;
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #FAC663;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 1;
+    transition: 1s;
+    opacity: 0;
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+}
+
 .rooms__decor-tray::after {
     height: 14px;
     background-image: url(../img/tray.svg);
