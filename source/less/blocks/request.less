@@ -1,0 +1,110 @@
+.request {
+    width: 100%;
+    min-height: 1600px;
+    height: 100%;
+    padding: 102px 15px;
+    background: rgba(255, 254, 253, 0.80);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.request__container {
+    background-color: #FFFEFD;
+    padding: 60px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 0px rgba(153, 153, 153, 0.25);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.request__container::after {
+    content: "";
+    width: 82px;
+    height: 90px;
+    position: absolute;
+    bottom: -16px;
+    left: -4px;
+    background-image: url(../img/paw_request.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.request__toggle {
+    width: 14px;
+    height: 14px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #FFFEFD;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.request__close::after,
+.request__close::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+.request__close::after {
+    transform: rotate(45deg);
+}
+
+.request__close::before {
+    transform: rotate(-45deg);
+}
+
+.request__title {
+    font-family: "Rubik";
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.request__text {
+    width: 53%;
+    margin: 0 auto;
+}
+
+.request__btn {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #fff;
+    width: 42%;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 34px;
+    margin-top: 36px;
+    border-radius: 25px;
+    background-color: @basic-orange;
+    position: relative;
+    text-align: left;
+}
+
+.request__btn::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/paw_btn.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}

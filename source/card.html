@@ -142,6 +142,79 @@
     <main class="card">
         <h1 class="visually-hidden">Карточка номера</h1>
 
+        <section class="pop-up__reservation reservation body__container">
+            <div class="reservation__container">
+                <button class="reservation__toggle" type="button">
+                    <span class="reservation__close"></span>
+                </button>
+                <h2 class="reservation__title">
+                    Забронировать номер
+                </h2>
+                <form class="reservation__form" action="#" method="post">
+                    <fieldset class="reservation__data data">
+                        <legend class="data__legend visually-hidden">Данные</legend>
+                        <div class="data__item">
+                            <label class="data__label visually-hidden" for="name">
+                                Имя
+                            </label>
+                            <input class="input" id="name" type="text" name="1st-name" placeholder="Ваше имя">
+                        </div>
+                        <div class="data__item">
+                            <label class="data__label visually-hidden" for="weight">
+                                Имя Питомца
+                            </label>
+                            <input class="input" id="weight" type="text" name="weight" placeholder="Имя Питомца">
+                        </div>
+                        <div class="data__item">
+                            <label class="data__label visually-hidden" for="phone">
+                                Телефон
+                            </label>
+                            <input class="input" id="phone" type="tel" name="phone" placeholder="Телефон">
+                        </div>
+                        <div class="data__item">
+                            <label class="data__label visually-hidden" for="e-mail">
+                                E-mail
+                            </label>
+                            <input class="input" id="e-mail" type="email" name="e-mail" placeholder="E-mail">
+                        </div>
+                        <div class="data__item data__check-in">
+                            <label class="data__label" for="check-in">
+                                Дата заезда
+                            </label>
+                            <div class="data__wrap">
+                                <p>с</p>
+                                <input class="input input__check-in" id="check-in" type="datetime" name="check-in"
+                                    placeholder="26.01.2020">
+                            </div>
+                            <div class="data__wrap">
+                                <p>по</p>
+                                <input class="input input__check-in" id="check-in" type="datetime" name="check-in"
+                                    placeholder="26.02.2020">
+                            </div>
+                        </div>
+        
+                    </fieldset>
+                    <!-- <button class="reservation__btn" type="submit">Отправить заявку</button> -->
+                    <button class="reservation__btn" type="button">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="pop-up__request request body__container">
+            <div class="request__container">
+                <button class="request__toggle" type="button">
+                    <span class="request__close"></span>
+                </button>
+                <h2 class="request__title">
+                    Спасибо за заявку!
+                </h2>
+                <p class="request__text">
+                    Мы свяжемся с вами в ближайшее время
+                </p>
+                <button class="request__btn" type="submit">Ок</button>
+            </div>
+        </section>
+
         <section class="card__choice choice body__container">
             <!-- <div class="choice__card"> -->
             <div class="choice__pict">
@@ -173,7 +246,7 @@
                     <span class="choice__price">600₽</span>
                 </li>
             </ul>
-            <button class="choice__button" type="button">
+            <button class="choice__button btn__reservation" type="button">
                 Забронировать
             </button>
             <!-- </div> -->
@@ -211,7 +284,7 @@
                                                 Цена за сутки: 200₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button">
+                                        <button class="apartments__button btn__reservation">
                                             Забронировать
                                         </button>
                                     </div>                
@@ -236,7 +309,7 @@
                                                 Цена за сутки: 250₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button">
+                                        <button class="apartments__button btn__reservation">
                                             Забронировать
                                         </button>
                                     </div>               
@@ -261,7 +334,7 @@
                                                 Цена за сутки: 350₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button">
+                                        <button class="apartments__button btn__reservation">
                                             Забронировать
                                         </button>
                                     </div>
@@ -459,6 +532,16 @@
         var openArea = document.querySelector('.area__js');
         var closeArea = document.querySelector('.area__btn');
 
+        // Pop-up  бронь номера
+        var reservPop = document.querySelector('.pop-up__reservation');
+        var openReserv = document.querySelector('.btn__reservation');
+        var closeReserv = document.querySelector('.reservation__toggle');
+
+        // Pop-up  спасибо за заявку
+        var reqPop = document.querySelector('.pop-up__request');
+        var openReq = document.querySelector('.reservation__btn');
+        var closeReq = document.querySelector('.request__toggle');
+        
         // navPop.classList.remove('pop-up--nojs');  
 
         closeToggle.addEventListener('click', function () {
@@ -496,6 +579,30 @@
 
         closeArea.addEventListener('click', function () {
             areaPop.classList.add('pop-up__area--js');
+        }
+        );
+
+        // Pop-up  бронь номера
+        openReserv.addEventListener('click', function () {
+            reservPop.classList.remove('pop-up__reservation');
+        }
+        );
+
+        closeReserv.addEventListener('click', function () {
+            reservPop.classList.add('pop-up__reservation');
+            // reqPop.classList.add('pop-up__reservation');
+        }
+        );
+
+        // Pop-up  спасибо за заявку
+        openReq.addEventListener('click', function () {
+            reqPop.classList.remove('pop-up__request');
+        }
+        );
+
+        closeReq.addEventListener('click', function () {
+            reqPop.classList.add('pop-up__request');
+            // reqPop.classList.add('pop-up__reservation');
         }
         );
 
