@@ -14,8 +14,9 @@
     <!-- <header class="header body__container header__color"> -->
     <header class="header body__container">
         <div class="header__wrap">
-            <a href="index.html">
-                <svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="header__logo" href="index.html">
+                <img src="img/logo.svg" alt="логотип" width="46" height="38">
+                <!-- <svg width="46" height="38" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.76782 35.4295C5.70896 34.7191 5.2852 34.0206 4.11987 33.9614C4.8379 33.8667 5.82667 32.2091 5.40291 30.9778C5.04978 29.9832 3.99039 30.374 3.36652 30.5634C3.24881 31.5106 3.51955 33.251 2.47192 33.4759C2.42484 32.9787 2.51901 32.1499 2.38952 31.2856C2.14233 29.853 0.400216 30.516 0 30.6936C0.153024 32.2801 0.129482 32.7064 0.129482 34.6126C0.141253 35.2637 0.0706263 36.2938 0.129482 36.8503C0.294276 38.3302 2.04816 37.9395 2.53078 37.4304C2.53078 36.8029 2.51901 35.5242 2.48369 34.8138C3.26058 34.7546 3.40183 34.9796 3.42538 36.6371C3.43715 38.2947 5.39114 37.9869 5.96793 37.4186C5.76782 36.8029 5.82667 36.0215 5.76782 35.4295Z" fill="#1A212F"/>
                     <path d="M6.78905 34.21C6.78905 37.6435 8.55471 37.9277 9.79067 37.8921C10.9325 37.8921 12.8041 37.5725 12.8158 34.21C12.8041 31.333 11.5328 30.3148 9.82598 30.3148C8.02501 30.3148 6.78905 31.4277 6.78905 34.21ZM9.82598 32.2446C9.95546 32.2446 10.4498 32.0552 10.4498 34.1271C10.4498 35.4769 10.238 36.2464 9.81421 36.2464C9.46108 36.2464 9.17857 35.9268 9.21389 34.1271C9.21389 32.4933 9.62587 32.2446 9.82598 32.2446Z" fill="#1A212F"/>
                     <path d="M15.2378 32.4933C15.2378 33.1681 15.226 33.914 15.2614 36.2109C15.2731 37.1344 15.3084 37.8921 16.3678 37.8685C17.3095 37.8685 17.5449 37.4896 17.6509 37.3712C17.6862 36.3411 17.6156 34.0916 17.592 32.5288C17.851 32.5288 18.0982 32.5288 18.3218 32.5169C19.0752 32.4933 19.3341 32.0433 19.3224 31.4158C19.3106 30.7055 18.7338 30.3266 17.9334 30.3266H15.6969C13.9195 30.3384 13.8017 30.3384 13.6605 30.3266C13.3309 31.7237 13.531 32.4696 14.8847 32.4933H15.2378Z" fill="#1A212F"/>
@@ -31,7 +32,7 @@
                     <path d="M23.3652 18.9983C24.1717 18.9983 24.8255 18.3439 24.8255 17.5367C24.8255 16.7294 24.1717 16.075 23.3652 16.075C22.5586 16.075 21.9048 16.7294 21.9048 17.5367C21.9048 18.3439 22.5586 18.9983 23.3652 18.9983Z" fill="#FF913C"/>
                     <path d="M18.9842 14.6128C18.5806 14.6128 18.2541 14.2856 18.2541 13.882V13.1512C18.2541 12.7476 18.5807 12.4204 18.9842 12.4204C19.3877 12.4204 19.7143 12.7476 19.7143 13.1512V13.882C19.7143 14.2856 19.3877 14.6128 18.9842 14.6128Z" fill="#1A212F"/>
                     <path d="M27.7459 14.6128C27.3423 14.6128 27.0158 14.2856 27.0158 13.882V13.1512C27.0158 12.7476 27.3424 12.4204 27.7459 12.4204C28.1495 12.4204 28.4761 12.7476 28.4761 13.1512V13.882C28.4761 14.2856 28.1495 14.6128 27.7459 14.6128Z" fill="#1A212F"/>
-                    </svg>            
+                    </svg>             -->
             </a>
             <button class="main-nav__toggle" type="button">
                 <span class="pop-up__open"></span>
@@ -188,7 +189,7 @@
             <p class="head__city">Санкт-Петербург</p>
             <h1 class="head__title">Котейка</h1>
             <p class="head__hotel">Уютная гостиница для котов и кошек</p>
-            <button class="head__btn btn__reservation">Забронировать</button>
+            <button class="head__btn btn__reserv">Забронировать</button>
             
         </section>
 
@@ -273,7 +274,11 @@
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="apartments__card">
-                                    <img src="img/mobile_econom.jpg" srcset="img/mobile_econom_2x.jpg 2x" alt="эконом" width="290" height="192">
+                                    <picture class="apartments__pict">
+                                        <!-- <source srcset="img/desktop_econom.jpg" srcset="img/desktop_econom_2x.jpg 2x" media="(min-width: 1440px)"> -->
+                                        <source srcset="img/tablet_econom.jpg, img/tablet_econom_2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="img/mobile_econom.jpg" srcset="img/mobile_econom_2x.jpg 2x" alt="эконом" width="290" height="192">
+                                    </picture>
                                     <div class="apartments__wrap">
                                         <h3 class="apartments_type">
                                             Эконом плюс
@@ -290,7 +295,7 @@
                                                 Цена за сутки: 200₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button btn__reservation">
+                                        <button class="apartments__button btn__reserv">
                                             Забронировать
                                         </button>
                                     </div>                
@@ -298,7 +303,11 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="apartments__card">
-                                    <img src="img/mobile_comfort.jpg" srcset="img/mobile_comfort_2x.jpg 2x" alt="комфорт" width="290" height="192">
+                                    <picture class="apartments__pict">
+                                        <!-- <source srcset="img/desktop_comfort.jpg" srcset="img/desktop_comfort_2x.jpg 2x" media="(min-width: 1440px)"> -->
+                                        <source srcset="img/tablet_comfort.jpg, img/tablet_comfort_2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="img/mobile_comfort.jpg" srcset="img/mobile_comfort_2x.jpg 2x" alt="комфорт" width="290" height="192">
+                                    </picture>
                                     <div class="apartments__wrap">
                                         <h3 class="apartments_type">
                                             Комфорт
@@ -315,7 +324,7 @@
                                                 Цена за сутки: 250₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button btn__reservation">
+                                        <button class="apartments__button btn__reserv">
                                             Забронировать
                                         </button>
                                     </div>               
@@ -323,7 +332,11 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="apartments__card">
-                                    <img src="img/mobile_suite.jpg" srcset="img/mobile_suite_2x.jpg 2x" alt="люкс" width="290" height="192">
+                                    <picture class="apartments__pict">
+                                        <!-- <source srcset="img/desktop_suite.jpg" srcset="img/desktop_suite_2x.jpg 2x" media="(min-width: 1440px)"> -->
+                                        <source srcset="img/tablet_suite.jpg, img/tablet_suite_2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="img/mobile_suite.jpg" srcset="img/mobile_suite_2x.jpg 2x" alt="люкс" width="290" height="192">
+                                    </picture>
                                     <div class="apartments__wrap">
                                         <h3 class="apartments_type">
                                             Сьют
@@ -340,7 +353,7 @@
                                                 Цена за сутки: 350₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button  btn__reservation">
+                                        <button class="apartments__button  btn__reserv">
                                             Забронировать
                                         </button>
                                     </div>
@@ -534,7 +547,7 @@
                     </a>
                 </li>
                 <li class="footer__nav-item">
-                    <a href="#">
+                    <a href="catalog.html">
                         Номера
                     </a>
                 </li>
@@ -570,7 +583,7 @@
 
         // Pop-up  бронь номера
         var reservPop = document.querySelector('.pop-up__reservation');
-        var openReserv = document.querySelector('.btn__reservation');
+        var openReserv = document.querySelector('.btn__reserv');
         var closeReserv = document.querySelector('.reservation__toggle');
 
         // Pop-up  спасибо за заявку

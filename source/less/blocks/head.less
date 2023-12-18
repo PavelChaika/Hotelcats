@@ -7,19 +7,35 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 457px;
+
+    @media (min-width: @tablet-width) {
+        background-image: url(../img/tablet_head.jpg);
+        min-height: 868px;
+    }
 }
 
 .head__city {
     font-size: 12px;
     line-height: 14px;
     padding-top: 48px;
-    // margin-bottom: 12px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 14px;
+        padding-top: 140px;
+        margin-bottom: 15px;
+    }
 }
 
 .head__title {
     font-family: "Rubikbold";
     font-size: 44px;
     line-height: 52px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 62px;
+        line-height: normal;
+        margin-bottom: 25px;
+    }
 }
 
 .head__hotel {
@@ -28,6 +44,12 @@
     line-height: 19px;
     margin-top: 10px;
     margin-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: normal;
+        font-weight: 500;
+    }
 }
 
 .head__btn {
@@ -37,7 +59,6 @@
     background-color: #fff;
     padding: 18px 64px 20px 30px;
     border-radius: 25px;
-
     position: relative;
 }
 

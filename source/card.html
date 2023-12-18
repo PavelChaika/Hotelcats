@@ -216,14 +216,12 @@
         </section>
 
         <section class="card__choice choice body__container">
-            <!-- <div class="choice__card"> -->
             <div class="choice__pict">
                 <img class="choice__main-pict" src="img/card_pict_1.jpg" srcset="img/card_pict_1_2x.jpg 2x" alt="Киса1" width="290" height="288">
                 <img src="img/card_pict_2.jpg" alt="Киса2" width="86" height="64">
                 <img src="img/card_pict_3.jpg" alt="Киса3" width="86" height="64">
                 <img src="img/card_pict_4.jpg" alt="Киса4" width="86" height="64">
             </div>
-            <!-- <div class="choice__wrap"> -->
             <h2 class="choice__title">
                 Супер-Люкс
             </h2>
@@ -246,11 +244,9 @@
                     <span class="choice__price">600₽</span>
                 </li>
             </ul>
-            <button class="choice__button btn__reservation" type="button">
+            <button class="choice__button btn__reserv" type="button">
                 Забронировать
             </button>
-            <!-- </div> -->
-            <!-- </div> -->
         </section>
 
         <section class="index__apartments apartments body__container">
@@ -284,7 +280,7 @@
                                                 Цена за сутки: 200₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button btn__reservation">
+                                        <button class="apartments__button btn__reserv">
                                             Забронировать
                                         </button>
                                     </div>                
@@ -309,7 +305,7 @@
                                                 Цена за сутки: 250₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button btn__reservation">
+                                        <button class="apartments__button btn__reserv">
                                             Забронировать
                                         </button>
                                     </div>               
@@ -334,7 +330,7 @@
                                                 Цена за сутки: 350₽
                                             </li>
                                         </ul>
-                                        <button class="apartments__button btn__reservation">
+                                        <button class="apartments__button btn__reserv">
                                             Забронировать
                                         </button>
                                     </div>
@@ -490,7 +486,7 @@
                     </a>
                 </li>
                 <li class="footer__nav-item">
-                    <a href="#">
+                    <a href="catalog.html">
                         Номера
                     </a>
                 </li>
@@ -524,17 +520,9 @@
         var openToggle = document.querySelector('.pop-up__open');
         var headerColor = document.querySelector('.header');
 
-        var filtPop = document.querySelector('.filter');
-        var openFilter = document.querySelector('.filter__js');
-        var closeFilter = document.querySelector('.filter__toggle');
-
-        var areaPop = document.querySelector('.pop-up__area--js');
-        var openArea = document.querySelector('.area__js');
-        var closeArea = document.querySelector('.area__btn');
-
         // Pop-up  бронь номера
         var reservPop = document.querySelector('.pop-up__reservation');
-        var openReserv = document.querySelector('.btn__reservation');
+        var openReserv = document.querySelector('.btn__reserv');
         var closeReserv = document.querySelector('.reservation__toggle');
 
         // Pop-up  спасибо за заявку
@@ -559,26 +547,6 @@
             closeToggle.classList.add('pop-up__opened');
             openToggle.classList.add('pop-up__closed');
             headerColor.classList.add('header__color');
-        }
-        );
-
-        openFilter.addEventListener('click', function () {
-            filtPop.classList.remove('pop-up__filter');
-        }
-        );
-
-        closeFilter.addEventListener('click', function () {
-            filtPop.classList.add('pop-up__filter');
-        }
-        );
-
-        openArea.addEventListener('click', function () {
-            areaPop.classList.remove('pop-up__area--js');
-        }
-        );
-
-        closeArea.addEventListener('click', function () {
-            areaPop.classList.add('pop-up__area--js');
         }
         );
 

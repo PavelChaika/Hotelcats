@@ -7,11 +7,27 @@
     width: 100%;
     z-index: 1;
     padding-top: 38px;
+
+    @media (min-width: @tablet-width) {
+        position: inherit;
+        background-color: @basic-background;
+        min-height: auto;
+        padding: 0;
+    }
 }
 
 .main-nav__toggle {
     padding: 0;
     background-color: inherit;
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+
+    // @media (min-width: @desktop-width) {
+    //     margin: 0 auto;
+    //     padding: 53px 110px 0px;
+    // }
 }
 
 .main-nav__list {
@@ -20,10 +36,22 @@
     font-weight: 600;
     line-height: normal;
     margin-left: 15px;
+
+    @media (min-width: @tablet-width) {
+        font-family: "latoregular";
+        font-size: 16px;
+        display: flex;
+        margin: 0;
+    }
 }
 
 .main-nav__item {
     margin-top: 25px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+        margin-left: 30px;
+    }
 }
 
 .main-nav__item--mobile {
