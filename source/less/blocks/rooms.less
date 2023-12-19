@@ -1,19 +1,51 @@
 .rooms {
     padding-top: 40px;
+
+    @media (min-width: @tablet-width) {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+}
+
+.rooms__wrapper {
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
 }
 
 .rooms__container {
     margin-bottom: 70px;
+
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 30px;
+        row-gap: 30px;
+        margin: 0;
+    }
 }
 
 .rooms__title {
     margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
 }
 
 .rooms__options {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
 }
 
 .rooms__options-parameter {
@@ -32,6 +64,12 @@
     position: relative;
     font-weight: 600;
     height: 35px;
+
+    @media (min-width: @tablet-width) {
+        padding-right: 20px;
+        padding-left: 42px;   
+        margin-right: 29px;     
+    }
 }
 
 .rooms__options-parameter--filter::before {
@@ -45,12 +83,21 @@
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
+
+    @media (min-width: @tablet-width) {
+        left: 20px;    
+    }
 }
 
 .rooms__options-parameter--area {
     padding-right: 47px;
     padding-left: 25px;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+        padding-right: 62px;
+        padding-left: 30px;    
+    }
 }
 
 .rooms__options-parameter--area::before {
@@ -64,6 +111,10 @@
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
+
+    @media (min-width: @tablet-width) {
+        left: 20px;    
+    }
 }
 
 .rooms__options-parameter--area::after {
@@ -84,6 +135,10 @@
     margin-bottom: 30px;
     border-radius: 6px;
     overflow: hidden;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;   
+    }
 }
 
 .rooms__card img {
