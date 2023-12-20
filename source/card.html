@@ -171,36 +171,54 @@
 
         <section class="card__choice choice body__container">
             <div class="choice__pict">
-                <img class="choice__main-pict" src="img/card_pict_1.jpg" srcset="img/card_pict_1_2x.jpg 2x" alt="Киса1" width="290" height="288">
-                <img src="img/card_pict_2.jpg" alt="Киса2" width="86" height="64">
-                <img src="img/card_pict_3.jpg" alt="Киса3" width="86" height="64">
-                <img src="img/card_pict_4.jpg" alt="Киса4" width="86" height="64">
+                <picture class="choice__main-pict">
+                    <source srcset="img/card_pict_1_desktop.jpg, img/card_pict_1_desktop_2x.jpg 2x" media="(min-width: 1366px)">
+                    <source srcset="img/card_pict_1_tablet.jpg, img/card_pict_1_tablet_2x.jpg 2x" media="(min-width: 768px)">
+                    <img src="img/card_pict_1.jpg" srcset="img/card_pict_1_2x.jpg 2x" alt="Киса1" width="290" height="288">
+                </picture>
+                <picture>
+                    <source srcset="img/card_pict_2_desktop.jpg" media="(min-width: 1366px)">
+                    <source srcset="img/card_pict_2_tablet.jpg" media="(min-width: 768px)">
+                    <img src="img/card_pict_2.jpg" alt="Киса2" width="86" height="64">
+                </picture>
+                <picture>
+                    <source srcset="img/card_pict_3_desktop.jpg" media="(min-width: 1366px)">
+                    <source srcset="img/card_pict_3_tablet.jpg" media="(min-width: 768px)">
+                    <img src="img/card_pict_3.jpg" alt="Киса2" width="86" height="64">
+                </picture>
+                <picture>
+                    <source srcset="img/card_pict_4_desktop.jpg" media="(min-width: 1366px)">
+                    <source srcset="img/card_pict_4_tablet.jpg" media="(min-width: 768px)">
+                    <img src="img/card_pict_4.jpg" alt="Киса2" width="86" height="64">
+                </picture>
             </div>
-            <h2 class="choice__title">
-                Супер-Люкс
-            </h2>
-            <ul class="choice__list">
-                <li class="choice__item">
-                    Размеры (ШхГхВ) - 180х160х180 см
-                </li>
-                <li class="choice__item">
-                    Площадь - 2,88 м2
-                </li>
-                <li class="choice__item choice__item-equipment">
-                    <p>Оснащение номера</p>
-                    <p class="choice__decor choice__decor-tray">Лежак</p>
-                    <p class="choice__decor choice__decor-house">Домик</p>
-                    <p class="choice__decor choice__decor-ball">Игровой комплекс - 3 яруса</p>
-                    <p class="choice__decor choice__decor-scratching">Когтеточка</p>
-                </li>
-                <li class="choice__item choice__item-cost">
-                    Цена за сутки:
-                    <span class="choice__price">600₽</span>
-                </li>
-            </ul>
-            <button class="choice__button btn__reserv" type="button">
-                Забронировать
-            </button>
+            <div class="choice__wrap">                
+                <h2 class="choice__title">
+                    Супер-Люкс
+                </h2>
+                <ul class="choice__list">
+                    <li class="choice__item">
+                        Размеры (ШхГхВ) - 180х160х180 см
+                    </li>
+                    <li class="choice__item">
+                        Площадь - 2,88 м2
+                    </li>
+                    <li class="choice__item choice__item-equipment">
+                        <p>Оснащение номера</p>
+                        <p class="choice__decor choice__decor-tray">Лежак</p>
+                        <p class="choice__decor choice__decor-house">Домик</p>
+                        <p class="choice__decor choice__decor-ball">Игровой комплекс - 3 яруса</p>
+                        <p class="choice__decor choice__decor-scratching">Когтеточка</p>
+                    </li>
+                    <li class="choice__item choice__item-cost">
+                        Цена за сутки:
+                        <span class="choice__price">600₽</span>
+                    </li>
+                </ul>
+                <button class="choice__button btn__reserv" type="button">
+                    Забронировать
+                </button>
+            </div>
         </section>
 
         <section class="index__apartments apartments body__container">
@@ -217,7 +235,12 @@
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="apartments__card">
-                                    <img src="img/mobile_econom.jpg" srcset="img/mobile_econom_2x.jpg 2x" alt="эконом" width="290" height="192">
+                                    <picture class="apartments__pict">
+                                        <source srcset="img/desktop_econom.jpg, img/desktop_econom_2x.jpg 2x" media="(min-width: 1366px)">
+                                        <source srcset="img/tablet_econom.jpg, img/tablet_econom_2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="img/mobile_econom.jpg" srcset="img/mobile_econom_2x.jpg 2x" alt="эконом" width="290"
+                                            height="192">
+                                    </picture>
                                     <div class="apartments__wrap">
                                         <h3 class="apartments_type">
                                             Эконом плюс
@@ -237,12 +260,17 @@
                                         <button class="apartments__button btn__reserv">
                                             Забронировать
                                         </button>
-                                    </div>                
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="apartments__card">
-                                    <img src="img/mobile_comfort.jpg" srcset="img/mobile_comfort_2x.jpg 2x" alt="комфорт" width="290" height="192">
+                                    <picture class="apartments__pict">
+                                        <source srcset="img/desktop_comfort.jpg, img/desktop_comfort_2x.jpg 2x" media="(min-width: 1366px)">
+                                        <source srcset="img/tablet_comfort.jpg, img/tablet_comfort_2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="img/mobile_comfort.jpg" srcset="img/mobile_comfort_2x.jpg 2x" alt="комфорт" width="290"
+                                            height="192">
+                                    </picture>
                                     <div class="apartments__wrap">
                                         <h3 class="apartments_type">
                                             Комфорт
@@ -262,12 +290,16 @@
                                         <button class="apartments__button btn__reserv">
                                             Забронировать
                                         </button>
-                                    </div>               
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="apartments__card">
-                                    <img src="img/mobile_suite.jpg" srcset="img/mobile_suite_2x.jpg 2x" alt="люкс" width="290" height="192">
+                                    <picture class="apartments__pict">
+                                        <source srcset="img/desktop_suite.jpg, img/desktop_suite_2x.jpg 2x" media="(min-width: 1366px)">
+                                        <source srcset="img/tablet_suite.jpg, img/tablet_suite_2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="img/mobile_suite.jpg" srcset="img/mobile_suite_2x.jpg 2x" alt="люкс" width="290" height="192">
+                                    </picture>
                                     <div class="apartments__wrap">
                                         <h3 class="apartments_type">
                                             Сьют
@@ -384,7 +416,7 @@
             </div>
     
             <picture class="footer__map">
-                <!-- <source srcset="img/desktop_econom.jpg" srcset="img/desktop_econom_2x.jpg 2x" media="(min-width: 1440px)"> -->
+                <source srcset="img/desktop_map.jpg, img/desktop_map_2x.jpg 2x" media="(min-width: 1366px)">
                 <source srcset="img/tablet_map.jpg, img/tablet_map_2x.jpg 2x" media="(min-width: 768px)">
                 <img src="img/mobile_map.jpg" srcset="img/mobile_map_2x.jpg 2x" alt="карта" width="320" height="300">
             </picture>

@@ -1,6 +1,14 @@
 .review {
     padding-top: 112px;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+        padding-top: 120px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding-top: 140px;
+    }
 }
 
 .review::before {
@@ -20,6 +28,10 @@
 .review__title {
     text-align: center;
     margin-bottom: 40px;
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 70px;
+    }
 }
 
 .review__customer {

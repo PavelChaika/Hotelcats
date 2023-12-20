@@ -12,6 +12,14 @@
         background-image: url(../img/tablet_head.jpg);
         min-height: 868px;
     }
+
+    @media (min-width: @desktop-width) {
+        text-align: left;
+        background-image: url(../img/desktop_head.jpg);
+        min-height: 504px;
+        padding-top: 153px;
+        padding-left: 198px;
+    }
 }
 
 .head__city {
@@ -23,6 +31,10 @@
         font-size: 14px;
         padding-top: 140px;
         margin-bottom: 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
     }
 }
 

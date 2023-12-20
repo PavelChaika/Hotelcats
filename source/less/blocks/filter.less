@@ -14,6 +14,15 @@
         padding: 0;
         padding-top: 136px;
     }
+
+    @media (min-width: @desktop-width) {
+        backdrop-filter: none;
+        background: none;
+        position: inherit;
+        padding: 0;
+        min-height: auto;
+        width: auto;
+    }
 }
 
 .filter__container {
@@ -32,6 +41,15 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
+    @media (min-width: @desktop-width) {
+        position: inherit;
+        transform: none;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0px;
+        display: block;
+    }
 }
 
 .filter__toggle {
@@ -48,6 +66,10 @@
         margin-top: 0;
         margin-bottom: 11px;
         margin-right: -35px;
+    }
+
+    @media (min-width: @desktop-width) {
+        display: none;
     }
 }
 

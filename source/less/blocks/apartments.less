@@ -1,9 +1,14 @@
 .apartments {
     padding-top: 66px !important;
     position: relative;
+    z-index: 0;
 
     @media (min-width: @tablet-width) {
         padding-top: 120px !important;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 140px 168px 0px !important;
     }
 }
 
@@ -19,6 +24,13 @@
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.2;
+
+    @media (min-width: @tablet-width) {
+        background-size: cover;
+        width: 339px;
+        height: 106px;
+        top: 170px;
+    }
 }
 
 .apartments img {
@@ -38,6 +50,10 @@
     @media (min-width: @tablet-width) {
         padding-bottom: 60px;
     }
+
+    @media (min-width: @desktop-width) {
+        padding-bottom: 70px;
+    }
 }
 
 .apartments__card {
@@ -49,6 +65,10 @@
         display: grid !important;
         grid-template-columns: 0.65fr;
         position: relative;
+    }
+
+    @media (min-width: @desktop-width) {
+        grid-template-columns: 0.58fr;
     }
 }
 
@@ -71,6 +91,11 @@
         padding-bottom: 32px;
         border-radius: 8px;
     }
+
+    @media (min-width: @desktop-width) {
+        width: 43%;
+        right: 130px;
+    }
 }
 
 .apartments_type {
@@ -86,6 +111,12 @@
         padding-top: 34px;
         padding-left: 40px;
     }
+
+    @media (min-width: @desktop-width) {
+        font-size: 22px;
+        padding-top: 40px;
+        padding-left: 100px;
+    }
 }
 
 .apartments__list {
@@ -93,6 +124,11 @@
 
     @media (min-width: @tablet-width) {
         padding: 20px 20px 22px 59px;
+    }
+
+    @media (min-width: @desktop-width) {
+        font-size: 16px;
+        padding: 30px 30px 30px 120px;
     }
 }
 
@@ -137,6 +173,10 @@
     @media (min-width: @tablet-width) {
         margin-left: 40px;
         padding: 14px 64px 17px 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-left: 100px;
     }
 }
 

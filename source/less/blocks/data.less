@@ -3,6 +3,10 @@
     line-height: normal;
     border: none;
     padding: 0;
+
+    @media (min-width: @tablet-width) {
+        font-size: 16px;
+    }
 }
 
 .data__item {
@@ -26,11 +30,22 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+        flex-wrap: nowrap;
+    }
 }
 
 .data__label {
     width: 100%;
     margin-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+        width: auto;
+        min-width: max-content;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
 }
 
 .data__wrap {
@@ -41,10 +56,18 @@
 
 .data__check-in .data__wrap:first-of-type {
     padding-right: 11px;
+
+    @media (min-width: @tablet-width) {
+        padding-right: 16px;
+    }
 }
 
 .data__wrap p {
     margin-right: 5px;
+
+    @media (min-width: @tablet-width) {
+        margin-right: 10px;
+    }
 }
 
 .input__check-in {
