@@ -7,8 +7,10 @@
     backdrop-filter: blur(4px);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
+    min-width: 320px;
 
     @media (min-width: @tablet-width) {
         padding: 133px 136px;
@@ -23,6 +25,12 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+        width: 52%;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
 }
 
 .request__container::after {

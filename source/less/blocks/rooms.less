@@ -5,6 +5,10 @@
         padding-top: 60px;
         padding-bottom: 120px;
     }
+
+    @media (min-width: @desktop-width) {
+        padding-bottom: 140px;
+    }
 }
 
 .rooms__wrapper {
@@ -46,6 +50,7 @@
 
     @media (min-width: @desktop-width) {
         display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -167,6 +172,10 @@
     border-top: none;
     border-radius: 0 0 6px 6px;
     box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+
+    @media (min-width: @desktop-width) {
+        padding: 26px 18px;
+    }
 }
 
 .rooms__type {
@@ -202,6 +211,10 @@
     position: relative;
     margin-left: 10px;
     width: 18px;
+
+    @media (min-width: @desktop-width) {
+        margin-left: 8px;
+    }
 }
 
 .rooms__decor-empty::after,
@@ -216,6 +229,14 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    @media (min-width: @desktop-width) {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 .rooms__decor-empty::after {
@@ -252,11 +273,19 @@
 .rooms__decor-tray::after {
     height: 14px;
     background-image: url(../img/tray.svg);
+
+    @media (min-width: @desktop-width) {
+        height: 12px;
+    }
 }
 
 .rooms__decor-scratching::after {
     width: 16px;
     background-image: url(../img/scratching.svg);
+
+    @media (min-width: @desktop-width) {
+        width: 14px;
+    }
 }
 
 .rooms__decor-ball::after {

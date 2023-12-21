@@ -39,6 +39,10 @@
     padding-bottom: 14px;
     margin-right: 25px;
     border-radius: 25px;
+
+    @media (min-width: @desktop-width) {
+        min-width: 185px;
+    }
 }
 
 .checkbox__btn--add {
@@ -47,6 +51,16 @@
 
     @media (min-width: @desktop-width) {
         display: none;
+    }
+}
+
+.checkbox__btn--apply {
+    display: none;
+    background-color: #FAC663;
+    margin-bottom: 15px;
+
+    @media (min-width: @desktop-width) {
+        display: block;
     }
 }
 

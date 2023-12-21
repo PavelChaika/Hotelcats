@@ -52,6 +52,14 @@
     display: flex;
     width: 50%;
     align-items: center;
+
+    @media (min-width: @tablet-width) {
+        width: 28%;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: auto;
+    }
 }
 
 .data__check-in .data__wrap:first-of-type {

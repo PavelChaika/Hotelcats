@@ -22,12 +22,12 @@
     display: flex;
 }
 
-// .coast__item {
-//     margin-right: 14px;
-// }
-
 .coast__item:first-of-type {
     margin-right: 14px;
+
+    @media (min-width: @desktop-width) {
+        margin-right: 10px;
+    }
 }
 
 .coast__price {
@@ -35,6 +35,11 @@
     width: 99px;
     padding: 13px 8px;
     border: 1px solid #E1E1E1;
+
+    @media (min-width: @desktop-width) {
+        width: 100px;
+        padding: 3px 8px;
+    }
 }
 
 .coast__price::placeholder {
